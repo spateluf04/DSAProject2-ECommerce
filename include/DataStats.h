@@ -12,7 +12,7 @@ namespace ecomm {
         double totalRev = 0.0;
         double avgVal = 0.0;
     };
-    //Classs to print stats
+    //Class to print stats
     class dataStats {
     public:
         //Calculate basic stats from stored data and prints
