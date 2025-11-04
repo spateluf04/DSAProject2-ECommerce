@@ -4,7 +4,7 @@
 namespace ecomm {
     struct basicStats {
         //Initialize all to 0
-        std::size_t orderCount = 0;
+        int orderCount = 0;
         //Distinct, no duplicates
         std::size_t distinctCustomers = 0;
         std::size_t distinctProducts  = 0;
