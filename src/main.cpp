@@ -1,6 +1,4 @@
-//
-// Created by Kush Patel on 11/3/25.
-//
+#include "MainApp.h"
 
 int main() {
     ecomm::MainApp app;
