@@ -53,7 +53,7 @@ const std::unordered_set<std::string>& Graph::neighbors(const std::string& id) c
     static const std::unordered_set<std::string> empty;
     std::unordered_map<std::string, std::unordered_set<std::string>>::const_iterator found = adj.find(id);
 
-    if (it == adj.end()) {
+    if (found == adj.end()) {
         return empty; //empty set
     } else {
         return it->second; //neighbor set
