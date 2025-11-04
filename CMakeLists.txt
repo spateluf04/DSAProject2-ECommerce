@@ -7,7 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(ecomm_lib
         src/DataLoader.cpp
         src/DataStats.cpp
-        src/Sort.cpp
         src/Graph.cpp
         src/MainApp.cpp
 )
