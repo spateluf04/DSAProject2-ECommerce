@@ -51,7 +51,7 @@ bool Graph::hasId(const std::string& id) const {
 
 const std::unordered_set<std::string>& Graph::neighbors(const std::string& id) const {
     static const std::unordered_set<std::string> empty;
-    std::unordered_map<std::string, std::unordered_set<std::string>>::const_iterator it = adj.find(id);
+    std::unordered_map<std::string, std::unordered_set<std::string>>::const_iterator found = adj.find(id);
 
     if (it == adj.end()) {
         return empty; //empty set
