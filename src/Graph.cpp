@@ -56,6 +56,6 @@ const std::unordered_set<std::string>& Graph::neighbors(const std::string& id) c
     if (found == adj.end()) {
         return empty; //empty set
     } else {
-        return it->second; //neighbor set
+        return found->second; //neighbor set
     }
 }
