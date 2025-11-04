@@ -10,8 +10,8 @@ class Graph {
 public:
     //edge is connection between two products
     void addEdge(const std::string& a, const std::string& b);
-    //returns recommended products, default number of recomendations is 3
-    std::vector<std::string> suggest(const std::string& product_id, int limit = 3) const;
+    //returns recommended products, default number of recommendations is 3
+    std::vector<std::string> recommend(const std::string& productId, int limit = 3) const;
     int nodeCount() const;
     int edgeCount() const;
     bool hasId(const std::string& id) const;
