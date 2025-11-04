@@ -10,8 +10,8 @@ namespace ecomm {
         std::string orderId;
         std::string customerId;
         std::string productId;
-        int32_t     quantity = 0;
-        int64_t     price_cents = 0;
+        int32_t quantity = 0;
+        int64_t price_cents = 0;
     };
 
     struct Product {
@@ -34,10 +34,7 @@ namespace ecomm {
 
     class DataLoader {
     public:
-        static DataStore loadAll(const std::string& orderItemsFile,
-                                 const std::string& ordersFile,
-                                 const std::string& productsFile,
-                                 const std::string& customersFile);
+        static DataStore loadAll(const std::string& orderItemsFile, const std::string& ordersFile, const std::string& productsFile, const std::string& customersFile);
     };
 
 }
