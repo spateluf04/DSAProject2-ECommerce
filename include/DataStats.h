@@ -16,7 +16,7 @@ namespace ecomm {
     class dataStats {
     public:
         //Calculate basic stats from stored data and prints
-        static basicStats compute(const dataStore& data);
-        static void print(const basicStats& stats, const dataStore& data);
+        static basicStats compute(const DataStore& data);
+        static void print(const basicStats& stats, const DataStore& data);
     };
 }
