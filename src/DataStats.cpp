@@ -4,7 +4,7 @@
 
 namespace ecomm {
     //take dataset in and return basic stat
-    basicStats dataStats::compute(const dataStore& data) {
+    basicStats dataStats::compute(const DataStore& data) {
         basicStats s{};
         //set order count to number of order entries in data.orders
         s.orderCount = data.orders.size();
@@ -18,8 +18,8 @@ namespace ecomm {
         for (int i = 0; i < data.orders.size(); ++i) {
             //ref to order object at i
             const Order& o = data.orders[i];
-            cstmr.insert(o.customer_id);
-            prdct.insert(o.product_id);
+            cstmr.insert(o.customerId);
+            prdct.insert(o.productId);
             //convert cents to dollars
             double price_dollars = static_cast<double>(o.price_cents) / 100.0;
             //adds order contribution to total revenue
@@ -40,7 +40,7 @@ namespace ecomm {
     }
 
     //prints menu for basic stats if option 2 selected
-    void dataStats::print(const basicStats& s, const dataStore&) {
+    void dataStats::print(const basicStats& s, const DataStore&) {
         std::cout << "==== BASIC STATS ====\n";
         std::cout << "Orders:          " << s.orderCount << "\n";
         std::cout << "Unique customers:" << s.distinctCustomers << "\n";
