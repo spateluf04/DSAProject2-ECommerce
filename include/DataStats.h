@@ -6,8 +6,8 @@ namespace ecomm {
         //Initialize all to 0
         int orderCount = 0;
         //Distinct, no duplicates
-        std::size_t distinctCustomers = 0;
-        std::size_t distinctProducts  = 0;
+        int distinctCustomers = 0;
+        int distinctProducts  = 0;
         //Dollar amount so double
         double totalRev = 0.0;
         double avgVal = 0.0;
