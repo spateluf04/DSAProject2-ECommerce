@@ -42,3 +42,20 @@ int Graph::edgeCount() const {
     for (const auto& kv : adj) sum += kv.second.size();
     return sum / 2;
 }
+
+//check for valid ID
+bool Graph::hasId(const std::string& id) const {
+    return adj.find(id) != adj.end();
+}
+
+
+const std::unordered_set<std::string>& Graph::neighbors(const std::string& id) const {
+    static const std::unordered_set<std::string> empty;
+    std::unordered_map<std::string, std::unordered_set<std::string>>::const_iterator it = adj.find(id);
+
+    if (it == adj.end()) {
+        return empty; //empty set
+    } else {
+        return it->second; //neighbor set
+    }
+}
