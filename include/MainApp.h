@@ -1,8 +1,20 @@
-//
-// Created by Kush Patel on 11/3/25.
-//
+#pragma once
+#include "DataLoader.h"
+#include "DataStats.h"
+#include "Graph.h"
+#include <string>
 
-#ifndef MAINAPP_H
-#define MAINAPP_H
+namespace ecomm {
 
-#endif //MAINAPP_H
+    class MainApp {
+
+    public:
+        void run();
+
+    private:
+        DataStore store;
+        Graph graph_;
+        bool graphBuilt_ = false;
+    };
+
+}
