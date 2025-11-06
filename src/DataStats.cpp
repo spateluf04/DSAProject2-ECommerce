@@ -14,7 +14,7 @@ namespace ecomm {
         std::unordered_set<std::string> cstmr, prdct;
         double revenue = 0.0;
 
-        //iterate to num of orders - 1
+        //iterate to number of orders - 1
         for (int i = 0; i < data.orders.size(); ++i) {
             //ref to order object at i
             const Order& o = data.orders[i];
