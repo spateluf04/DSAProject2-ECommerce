@@ -69,7 +69,7 @@ namespace ecomm {
                     break;
                 }
 
-                //Path for benchmark merge sort vs quick sort
+                //Path for the benchmark merge sort versus quick sort
                 case 3: {
                     if (store.orders.empty()) {
                         std::cout << "Load data first.\n";
