@@ -23,7 +23,7 @@ namespace ecomm {
                       << "5. Query Graph\n"
                       << "0. Exit\n> ";
 
-            //Reads and validates menu choices
+            //Reads and validates the menu choices
             std::string input;
             std::getline(std::cin, input);
             if (input.empty()) continue;
