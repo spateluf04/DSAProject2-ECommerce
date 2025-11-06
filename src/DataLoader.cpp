@@ -19,7 +19,7 @@ namespace ecomm {
         return s;
     }
 
-//Deal with the csv file
+//Deals with the csv file
     static std::vector<std::string> splitRow(const std::string& line, char delim=','){
         std::vector<std::string> out; out.reserve(16);
         std::string current; current.reserve(line.size());
