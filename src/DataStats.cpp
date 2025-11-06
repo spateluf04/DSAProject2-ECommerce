@@ -3,7 +3,7 @@
 #include <unordered_set>
 
 namespace ecomm {
-    //take dataset in and return basic stat
+    //take dataset in and return basic statistic
     basicStats dataStats::compute(const DataStore& data) {
         basicStats s{};
         //set order count to number of order entries in data.orders
