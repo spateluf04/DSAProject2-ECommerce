@@ -6,7 +6,7 @@ namespace ecomm {
     //take dataset in and return basic statistic
     basicStats dataStats::compute(const DataStore& data) {
         basicStats s{};
-        //set order count to number of order entries in data.orders
+        //sets order count to number of order entries in data.orders
         s.orderCount = data.orders.size();
 
 
