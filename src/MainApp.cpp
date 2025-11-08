@@ -95,7 +95,7 @@ namespace ecomm {
                     break;
                 }
                 
-                //Build Graph
+                //Build the Graph
                 case 4: {
                     if (store.orders.empty()) {
                         std::cout << "No data loaded yet. Choose option 1 first.\n";
