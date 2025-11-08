@@ -43,7 +43,7 @@ int Graph::edgeCount() const {
     return sum / 2;
 }
 
-//check for valid ID
+//checks for valid ID
 bool Graph::hasId(const std::string& id) const {
     return adj.find(id) != adj.end();
 }
