@@ -12,7 +12,7 @@ void Graph::addEdge(const std::string & a, const std::string & b) {
     adj[b].insert(a);
 }
 
-//recommendation func
+//recommendation funcuntion
 std::vector<std::string>Graph::suggest(const std::string& productId, int limit) const {
     std::vector<std::pair<std::string,int>> freq; //product,count pairs
     std::unordered_map<std::string,int> count;
